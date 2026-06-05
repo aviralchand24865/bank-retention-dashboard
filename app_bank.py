@@ -14,7 +14,7 @@ st.set_page_config(
 # ── Load data ───────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv('European_Bank_excel.csv')
+    df = pd.read_csv('European_Bank excel.xlsv')
     df['Churn_Status'] = df['Exited'].map({1: 'Churned', 0: 'Retained'})
 
     # Relationship Strength Index
